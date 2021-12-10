@@ -35,7 +35,7 @@ Program Rang
     
     do col = 1,7
         if (col .eq. color%blue) then
-        print *, "it is not blue", color%blue
+        print *, "it is blue", color%blue
         else if (col .eq. color%veryDarkGreen) then
         print *, "it is very dark green", color%veryDarkGreen
         else if (col .eq. color%purple) then
