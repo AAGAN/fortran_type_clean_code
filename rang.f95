@@ -12,9 +12,12 @@ Program Rang
     ! create a type with some integer values
     !(probably it's better to put this in a module)
     type colortype
-      integer(int8) :: red, blue, veryDarkGreen, purple
+      integer(int8) :: red=1
+      integer(int8) :: blue=2
+      integer(int8) :: veryDarkGreen=3
+      integer(int8) :: purple=6
     end type colortype
-    type(colortype), parameter :: color = colortype(red=1,blue=2,veryDarkGreen=3,purple=6)
+    type(colortype), parameter :: color = colortype()
     
     print *, color%red, color%blue, color%veryDarkGreen, color%purple
     
